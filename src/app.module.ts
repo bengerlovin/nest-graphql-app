@@ -14,9 +14,10 @@ import { PetsModule } from './pets/pets.module';
       driver: ApolloDriver,
     }),
     TypeOrmModule.forRoot({
+      autoLoadEntities: true,
       type: 'sqlite',
       database: ':memory:',
-      entities: ['dist/**/*/entity{.ts,.js}'],
+      entities: ['dist/entity/**/*.js'],
       synchronize: true, // only for development, in prod use migration style
     }),
     PetsModule,
