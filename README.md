@@ -1,4 +1,4 @@
-# NestJS Bookmark CRUD App
+# NestJS GraphQL App
 
 Starter app to learn the basics of NestJS and GraphQL.
 
