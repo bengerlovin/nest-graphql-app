@@ -17,7 +17,7 @@ import { PetsModule } from './pets/pets.module';
       type: 'sqlite',
       database: ':memory:',
       entities: ['dist/**/*/entity{.ts,.js}'],
-      synchronize: true,
+      synchronize: true, // only for development, in prod use migration style
     }),
     PetsModule,
   ],
